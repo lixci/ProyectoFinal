@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Permanent+Marker&display=swap');
 
 
-/*font-family: 'Love Ya Like A Sister', cursive;*/
-/*font-family: 'Permanent Marker', cursive;*/
-
+/*  font-family: 'Love Ya Like A Sister', cursive;  */
+/*  font-family: 'Permanent Marker', cursive;   */
+/*  Color Logo: #1EB690;    */
+/*  Color Fondo: #152056;   */
 
 *{
     margin: 0;
@@ -12,9 +13,27 @@
 }
 .navbar{
     background-color: #152056;
-    .navbar-brand{
-        color: whitesmoke;
-        font-family: 'Love Ya Like A Sister';
-        font-size: 30px;
+    box-shadow: 2px 2px 5px #000;
+    opacity: .9;
+    .container{
+        padding-left: 0px;
+        padding-right: 0px;
+        .navbar-brand{
+            color: whitesmoke;
+            font-family: 'Love Ya Like A Sister';
+            font-size: 30px;
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        color: whitesmoke;
+                        &:hover{
+                            color: #1EB690;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
