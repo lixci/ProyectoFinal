@@ -1,1 +1,9 @@
-/*# sourceMappingURL=estilos.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #152056;
+}/*# sourceMappingURL=estilos.css.map */
