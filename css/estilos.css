@@ -28,4 +28,10 @@
 }
 .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: #1EB690;
+}
+
+.img-fluid {
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=estilos.css.map */
