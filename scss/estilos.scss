@@ -11,11 +11,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+.header-index{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/clase1.jpg);
+    background-size: cover;
+}
 .navbar{
     background-color: #152056;
     box-shadow: 2px 2px 5px #000;
     opacity: 0.9;
-    .container{
+    .container-fluid{
         padding-left: 0px;
         padding-right: 0px;
         .navbar-brand{
@@ -36,8 +42,4 @@
             }
         }
     }
-}
-.img-fluid{
-    width: 60%;
-    object-fit: cover;
 }
