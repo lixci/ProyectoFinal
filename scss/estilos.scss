@@ -14,28 +14,81 @@
 .header-index{
     width: 100%;
     min-height: 100vh;
-    background-image: url(../img/clase1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/clase1.jpg);
     background-size: cover;
-}
-.navbar{
-    background-color: #152056;
-    box-shadow: 2px 2px 5px #000;
-    opacity: 0.9;
-    .container-fluid{
-        padding-left: 0px;
-        padding-right: 0px;
-        .navbar-brand{
-            color: whitesmoke;
-            font-family: 'Love Ya Like A Sister';
-            font-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    .texto{
+        min-height: 89.5vh;
+        color: whitesmoke;
+        text-transform: capitalize;
+    }
+    .navbar{
+        background-color: #152056;
+        box-shadow: 2px 2px 5px #000;
+        font-family: 'Love Ya Like A Sister';
+        .contenedor-hi{
+            .logo{
+                .navbar-brand{
+                    margin-right: 0.3em;
+                }
+                h1{
+                    color: whitesmoke;
+                    font-size: 2.2em;
+                    margin: 0;
+                }
+            }
+            .navbar-collapse{
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            color: whitesmoke;
+                            letter-spacing: 3px;
+                            &:hover{
+                                color: #1EB690;
+                            }
+                        }
+                    }
+                }
+            }
         }
-        .navbar-collapse{
-            .navbar-nav{
-                .nav-item{
-                    .nav-link{
-                        color: whitesmoke;
-                        &:hover{
-                            color: #1EB690;
+    }
+}
+.main-index{
+    height: 500px;
+    .contenedor-mi{
+        .fila-mi{
+            .tarjeta{
+                position: relative;
+                width: 400px;
+                height: 400px;
+                .cara{
+                    position: absolute;
+                    width: 90%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    transition: 0.7s;
+                    .frente{
+                        transform: perspective(600px) rotateY(0deg);
+                        box-shadow: 0 5px 10px black;
+                        img{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        h3{
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            height: 50px;
+                            line-height: 50px;
+                            color: whitesmoke;
+                            background: rgb(0, 0, 0, 0.4);
+                            text-align: center;
                         }
                     }
                 }
