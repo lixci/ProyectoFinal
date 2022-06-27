@@ -11,14 +11,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.header-index{
-    width: 100%;
-    min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/clase1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+.header{
     .texto{
         min-height: 89.5vh;
         color: whitesmoke;
@@ -28,12 +21,12 @@
         background-color: #152056;
         box-shadow: 2px 2px 5px #000;
         font-family: 'Love Ya Like A Sister';
-        .contenedor-hi{
+        .contenedor{
             .logo{
                 .navbar-brand{
                     margin-right: 0.3em;
                 }
-                h1{
+                h2{
                     color: whitesmoke;
                     font-size: 2.2em;
                     margin: 0;
@@ -55,44 +48,18 @@
         }
     }
 }
+.header-index{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/clase1.jpg);
+    background-size: cover;
+    background-position: center;
+}
 .main-index{
-    height: 500px;
-    .contenedor-mi{
-        .fila-mi{
-            .tarjeta{
-                position: relative;
-                width: 400px;
-                height: 400px;
-                .cara{
-                    position: absolute;
-                    width: 90%;
-                    height: 100%;
-                    backface-visibility: hidden;
-                    border-radius: 10px;
-                    overflow: hidden;
-                    transition: 0.7s;
-                    .frente{
-                        transform: perspective(600px) rotateY(0deg);
-                        box-shadow: 0 5px 10px black;
-                        img{
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                        }
-                        h3{
-                            position: absolute;
-                            bottom: 0;
-                            width: 100%;
-                            height: 50px;
-                            line-height: 50px;
-                            color: whitesmoke;
-                            background: rgb(0, 0, 0, 0.4);
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-        }
+    height: 400px;
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+        color: #152056;
     }
 }
