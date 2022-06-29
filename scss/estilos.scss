@@ -11,36 +11,30 @@
     padding: 0;
     box-sizing: border-box;
 }
-.header{
-    .texto{
-        min-height: 89.5vh;
-        color: whitesmoke;
-        text-transform: capitalize;
-    }
-    .navbar{
-        background-color: #152056;
-        box-shadow: 2px 2px 5px #000;
-        font-family: 'Love Ya Like A Sister';
-        .contenedor{
-            .logo{
-                .navbar-brand{
-                    margin-right: 0.3em;
-                }
-                h2{
-                    color: whitesmoke;
-                    font-size: 2.2em;
-                    margin: 0;
-                }
+/*  NAVBAR GENERAL  */
+.navbar{
+    background-color: #152056;
+    box-shadow: 2px 2px 5px #000;
+    font-family: 'Love Ya Like A Sister';
+    .contenedor{
+        .logo{
+            .navbar-brand{
+                margin-right: 0.3em;
             }
-            .navbar-collapse{
-                .navbar-nav{
-                    .nav-item{
-                        .nav-link{
-                            color: whitesmoke;
-                            letter-spacing: 3px;
-                            &:hover{
-                                color: #1EB690;
-                            }
+            h2{
+                color: whitesmoke;
+                font-size: 2.2em;
+                margin: 0;
+            }
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        color: whitesmoke;
+                        letter-spacing: 3px;
+                        &:hover{
+                            color: #1EB690;
                         }
                     }
                 }
@@ -48,18 +42,120 @@
         }
     }
 }
+/*   HEADER INDEX   */
 .header-index{
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/clase1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.95)), url(../img/clase1.jpg);
     background-size: cover;
     background-position: center;
+    .texto{
+        min-height: 89.7vh;
+        .contenedor-bi{
+            .fila-bi{
+                .titulo-bi{
+                    color: whitesmoke;
+                    text-transform: capitalize;
+                    h1{
+                        font-size: 5em;
+                        margin-bottom: 50px;
+                    }
+                    p{
+                        margin-bottom: 50px;
+                        font-size: 1.1em;
+                    }
+                    .btn-outline-info{
+                        border-color: #1EB690;
+                        &:hover{
+                            background-color: #1EB690;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+/*   MAIN INDEX   */
 .main-index{
-    height: 400px;
+    height: auto;
+    background-color: #111;
+    border-top: 4px solid #1EB690;
+    border-bottom: 4px solid #1EB690;
     h2{
         text-align: center;
         text-transform: uppercase;
-        color: #152056;
+        color: whitesmoke;
+        font-size: 50px;
+        padding-top: 50px;
+        padding-bottom: 30px;
     }
+    .contenedor-mi{
+        padding-left: 90px;
+        padding-right: 90px;
+        .card-deck{
+            padding-bottom: 100px;
+            .card{
+                position: relative;
+                height: 300px;
+                border: none;
+                border-radius: 10px;
+                background-color: transparent;
+                &:hover{
+                    .frente{
+                        transform: perspective(600px) rotateY(180deg);
+                    }
+                    .dorso{
+                        transform: perspective(600px) rotateY(360deg);
+                    }
+                }
+            }
+            .card-body{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: 0.5s;
+                padding: 0;
+            }
+            .frente{
+                transform: perspective(600px) rotateY(0deg);
+                img{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .dorso{
+                transform: perspective(600px) rotateY(180deg);
+                background-color: rgb(21, 32, 86);
+                box-shadow: 0 5px 10px #000;
+                padding: 15px;
+                color: whitesmoke;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                h3{
+                    font-size: 2em;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    letter-spacing: 2px;
+                    text-transform: capitalize;
+                }
+                p{
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+}
+footer{
+    height: 200px;
+    box-shadow: 5px 2px 2px #000;
+    font-family: 'Love Ya Like A Sister';
+    background-color: #152056;
+    color: #1EB690;
 }
