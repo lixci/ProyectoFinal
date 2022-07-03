@@ -11,6 +11,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../img/icon32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/icon16.png">
     <link rel="manifest" href="../img/site.webmanifest">
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <!-- FONT-AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- BOOTSTRAP -->
@@ -24,7 +28,7 @@
     <header class="header header-contacto">
         <!-- INICIO NAVBAR -->
         <nav class="navbar navbar-expand-md navbar-dark">
-            <div class="container-fluid contenedor contenedor-nbc">
+            <div class="container contenedor contenedor-nbc">
                 <div class="row align-items-center logo">
                     <a class="navbar-brand" href="../index.html">
                         <img src="../img/logo.png" alt="logo">
@@ -52,7 +56,25 @@
         <!-- FIN NAVBAR -->
     </header>
     <main class="main main-contacto">
-
+        <div class="container-fluid contenedor-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1673.086653836836!2d-60.624602173322714!3d-32.99920605599506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab7620b55901%3A0x22bd816f1627407c!2sAv.%20Ntra%20Sra%20del%20Rosario%20210%2C%20S2011%20AXP%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1656803630332!5m2!1ses-419!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container-fluid contenedor-form">
+            <h3>contacto</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <form action="">
+                        <input class="col" type="text" placeholder="nombre y apellido" required>
+                        <input class="col" type="number" placeholder="telefono" required>
+                        <textarea class="col" name="comentario" rows="3" placeholder="comentarios" required></textarea>
+                        <button class="col btn btn-outline-info btn-lg text-white">enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <p>podes completar con tus datos este formulario para poder conocerte un poco mas y tratar de resolver cualquier inquietud que tengas.</p>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

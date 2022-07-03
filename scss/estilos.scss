@@ -11,10 +11,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*   BARRA PERSONALIZADA   */
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    background: #111;
+}
+::-webkit-scrollbar-thumb{
+    background: #1EB690;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #152056;
+}
 /*  NAVBAR GENERAL  */
 .navbar{
     background-color: #152056;
-    box-shadow: 2px 2px 5px #000;
+    box-shadow: 0px 2px 5px #000;
     font-family: 'Love Ya Like A Sister';
     .contenedor{
         .logo{
@@ -42,6 +55,38 @@
         }
     }
 }
+/*   FOOTER GENERAL   */
+footer{
+    height: auto;
+    box-shadow: 0 -2px 5px #000;
+    background-color: #152056;
+    .container{
+        .row{
+            font-family: 'Love Ya Like A Sister';
+            color: whitesmoke;
+            .logo-footer{
+                .footer-brand{
+                    padding-top: 15px;
+                }
+                .titulo-logo{
+                    margin: 0;
+                    margin-left: 5px;
+                    margin-top: 15px;
+                }
+            }
+            .redes{
+                p{
+                    text-transform: capitalize;
+                    font-size: 30px;
+                }
+                a{
+                    color: whitesmoke;
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
 /*   HEADER INDEX   */
 .header-index{
     width: 100%;
@@ -59,6 +104,9 @@
                     h1{
                         font-size: 5em;
                         margin-bottom: 50px;
+                        span{
+                            font-family: cursive;
+                        }
                     }
                     p{
                         margin-bottom: 50px;
@@ -80,14 +128,14 @@
     height: auto;
     background-color: #111;
     border-top: 4px solid #1EB690;
-    border-bottom: 4px solid #1EB690;
     h2{
         text-align: center;
         text-transform: uppercase;
         color: whitesmoke;
         font-size: 50px;
+        font-family: 'Love Ya Like A Sister';
         padding-top: 50px;
-        padding-bottom: 30px;
+        padding-bottom: 80px;
     }
     .contenedor-mi{
         padding-left: 90px;
@@ -152,10 +200,10 @@
         }
     }
 }
-footer{
-    height: 200px;
-    box-shadow: 5px 2px 2px #000;
-    font-family: 'Love Ya Like A Sister';
-    background-color: #152056;
-    color: #1EB690;
+/*   MAIN CONTACTO   */
+.main-contacto{
+    width: 100%;
+    .contenedor-mapa{
+        padding: 0;
+    }
 }

@@ -9,10 +9,27 @@
   box-sizing: border-box;
 }
 
+/*   BARRA PERSONALIZADA   */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1EB690;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #152056;
+}
+
 /*  NAVBAR GENERAL  */
 .navbar {
   background-color: #152056;
-  box-shadow: 2px 2px 5px #000;
+  box-shadow: 0px 2px 5px #000;
   font-family: "Love Ya Like A Sister";
 }
 .navbar .contenedor .logo .navbar-brand {
@@ -29,6 +46,33 @@
 }
 .navbar .contenedor .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: #1EB690;
+}
+
+/*   FOOTER GENERAL   */
+footer {
+  height: auto;
+  box-shadow: 0 -2px 5px #000;
+  background-color: #152056;
+}
+footer .container .row {
+  font-family: "Love Ya Like A Sister";
+  color: whitesmoke;
+}
+footer .container .row .logo-footer .footer-brand {
+  padding-top: 15px;
+}
+footer .container .row .logo-footer .titulo-logo {
+  margin: 0;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+footer .container .row .redes p {
+  text-transform: capitalize;
+  font-size: 30px;
+}
+footer .container .row .redes a {
+  color: whitesmoke;
+  font-size: 50px;
 }
 
 /*   HEADER INDEX   */
@@ -50,6 +94,9 @@
   font-size: 5em;
   margin-bottom: 50px;
 }
+.header-index .texto .contenedor-bi .fila-bi .titulo-bi h1 span {
+  font-family: cursive;
+}
 .header-index .texto .contenedor-bi .fila-bi .titulo-bi p {
   margin-bottom: 50px;
   font-size: 1.1em;
@@ -66,15 +113,15 @@
   height: auto;
   background-color: #111;
   border-top: 4px solid #1EB690;
-  border-bottom: 4px solid #1EB690;
 }
 .main-index h2 {
   text-align: center;
   text-transform: uppercase;
   color: whitesmoke;
   font-size: 50px;
+  font-family: "Love Ya Like A Sister";
   padding-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 80px;
 }
 .main-index .contenedor-mi {
   padding-left: 90px;
@@ -139,10 +186,10 @@
   letter-spacing: 0.5px;
 }
 
-footer {
-  height: 200px;
-  box-shadow: 5px 2px 2px #000;
-  font-family: "Love Ya Like A Sister";
-  background-color: #152056;
-  color: #1EB690;
+/*   MAIN CONTACTO   */
+.main-contacto {
+  width: 100%;
+}
+.main-contacto .contenedor-mapa {
+  padding: 0;
 }/*# sourceMappingURL=estilos.css.map */
