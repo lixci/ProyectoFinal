@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Contactame y con una sola clase te voy a demostrar que vas a poder resolver todo">
+    <meta name="keywords" content="Contacto, ubicacion, formulario, datos">
     <!-- ICONOS -->
     <link rel="apple-touch-icon" sizes="180x180" href="../img/apple.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/icon32.png">
@@ -28,7 +28,7 @@
     <header class="header header-contacto">
         <!-- INICIO NAVBAR -->
         <nav class="navbar navbar-expand-md navbar-dark">
-            <div class="container contenedor contenedor-nbc">
+            <div class="container-fluid contenedor contenedor-nbc">
                 <div class="row align-items-center logo">
                     <a class="navbar-brand" href="../index.html">
                         <img src="../img/logo.png" alt="logo">
@@ -57,25 +57,61 @@
     </header>
     <main class="main main-contacto">
         <div class="container-fluid contenedor-mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1673.086653836836!2d-60.624602173322714!3d-32.99920605599506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab7620b55901%3A0x22bd816f1627407c!2sAv.%20Ntra%20Sra%20del%20Rosario%20210%2C%20S2011%20AXP%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1656803630332!5m2!1ses-419!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1673.086653836836!2d-60.624602173322714!3d-32.99920605599506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab7620b55901%3A0x22bd816f1627407c!2sAv.%20Ntra%20Sra%20del%20Rosario%20210%2C%20S2011%20AXP%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1656803630332!5m2!1ses-419!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="animated fadeIn"></iframe>
         </div>
         <div class="container-fluid contenedor-form">
-            <h3>contacto</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <form action="">
-                        <input class="col" type="text" placeholder="nombre y apellido" required>
-                        <input class="col" type="number" placeholder="telefono" required>
-                        <textarea class="col" name="comentario" rows="3" placeholder="comentarios" required></textarea>
-                        <button class="col btn btn-outline-info btn-lg text-white">enviar</button>
-                    </form>
+            <h3 class="animated fadeInDown">contacto</h3>
+            <div class="row fila">
+                <div class="col-md-6 columna1">
+                    <p class="animated fadeInLeft">podes completar con tus datos este formulario para poder conocerte un poco mas y tratar de resolver cualquier inquietud que tengas.</p>
                 </div>
-                <div class="col-md-6">
-                    <p>podes completar con tus datos este formulario para poder conocerte un poco mas y tratar de resolver cualquier inquietud que tengas.</p>
+                <div class="col-md-6 columna2">
+                    <form action="" class="animated fadeInRight">
+                        <div class="cont cont-nom">
+                            <i class="fa-solid fa-id-card"></i>
+                            <input type="text" placeholder="nombre y apellido" required>
+                        </div>
+                        <div class="cont cont-tel">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="number" placeholder="(111) 111-1111" required>
+                        </div>
+                        <div class="cont cont-com">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <textarea name="comentario" rows="3" placeholder="comentarios" required></textarea>
+                        </div>
+                        <button class="btn btn-outline-info btn-lg text-white botonc" type="submit">enviar</button>
+                    </form>
                 </div>
             </div>
         </div>
     </main>
+    <!-- INICIO FOOTER -->
+    <footer class="d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="logo-footer col-md-4">
+                    <a class="footer-brand" href="../index.html">
+                        <img src="../img/logo.png" alt="logo">
+                    </a>
+                    <h2 class="titulo-logo">SP Clases Particulares</h2>
+                </div>
+                <div class="redes col-md-4">
+                    <p>redes</p>
+                    <a href="https://www.facebook.com/silvana.v.pavoni"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="https://instagram.com/silvanapavoni?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="pago col-md-4">
+                    <p>medios de pago</p>
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <i class="fa-solid fa-credit-card"></i>
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copy">
+        <p>copyright - 2022 - andres nazzi</p>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>

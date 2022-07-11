@@ -37,12 +37,15 @@
 }
 .navbar .contenedor .logo h2 {
   color: whitesmoke;
-  font-size: 2.2em;
+  font-size: 1.9em;
   margin: 0;
+}
+.navbar .contenedor .navbar-toggler {
+  font-size: 20px;
 }
 .navbar .contenedor .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: whitesmoke;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 .navbar .contenedor .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: #1EB690;
@@ -50,29 +53,62 @@
 
 /*   FOOTER GENERAL   */
 footer {
-  height: auto;
+  height: 400px;
   box-shadow: 0 -2px 5px #000;
   background-color: #152056;
 }
-footer .container .row {
+footer .container-fluid .row {
   font-family: "Love Ya Like A Sister";
   color: whitesmoke;
+  align-items: center;
 }
-footer .container .row .logo-footer .footer-brand {
-  padding-top: 15px;
+footer .container-fluid .row .logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-footer .container .row .logo-footer .titulo-logo {
+footer .container-fluid .row .logo-footer .titulo-logo {
   margin: 0;
   margin-left: 5px;
-  margin-top: 15px;
+  font-size: 1.8em;
 }
-footer .container .row .redes p {
+footer .container-fluid .row .redes {
+  text-align: center;
+}
+footer .container-fluid .row .redes p {
   text-transform: capitalize;
-  font-size: 30px;
+  font-size: 35px;
+  padding-bottom: 10px;
 }
-footer .container .row .redes a {
+footer .container-fluid .row .redes a {
   color: whitesmoke;
-  font-size: 50px;
+  font-size: 35px;
+  padding: 0 10px 0 10px;
+}
+footer .container-fluid .row .redes a:hover {
+  color: #1EB690;
+}
+footer .container-fluid .row .pago {
+  text-transform: capitalize;
+  text-align: center;
+}
+footer .container-fluid .row .pago p {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+footer .container-fluid .row .pago i {
+  font-size: 30px;
+  padding: 0 10px 0 10px;
+}
+
+.copy {
+  text-transform: capitalize;
+  background-color: #152056;
+}
+.copy p {
+  color: whitesmoke;
+  text-align: center;
+  margin: 0;
 }
 
 /*   HEADER INDEX   */
@@ -81,7 +117,6 @@ footer .container .row .redes a {
   min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.95)), url(../img/clase1.jpg);
   background-size: cover;
-  background-position: center;
 }
 .header-index .texto {
   min-height: 89.7vh;
@@ -91,28 +126,28 @@ footer .container .row .redes a {
   text-transform: capitalize;
 }
 .header-index .texto .contenedor-bi .fila-bi .titulo-bi h1 {
+  font-family: "Love Ya Like A Sister";
   font-size: 5em;
   margin-bottom: 50px;
-}
-.header-index .texto .contenedor-bi .fila-bi .titulo-bi h1 span {
-  font-family: cursive;
 }
 .header-index .texto .contenedor-bi .fila-bi .titulo-bi p {
   margin-bottom: 50px;
   font-size: 1.1em;
+  font-family: "Love Ya Like A Sister";
 }
-.header-index .texto .contenedor-bi .fila-bi .titulo-bi .btn-outline-info {
+.header-index .texto .contenedor-bi .fila-bi .titulo-bi .botoni {
   border-color: #1EB690;
+  font-family: Verdana;
 }
-.header-index .texto .contenedor-bi .fila-bi .titulo-bi .btn-outline-info:hover {
+.header-index .texto .contenedor-bi .fila-bi .titulo-bi .botoni:hover {
   background-color: #1EB690;
 }
 
 /*   MAIN INDEX   */
 .main-index {
   height: auto;
-  background-color: #111;
-  border-top: 4px solid #1EB690;
+  background-color: #111111;
+  padding-bottom: 50px;
 }
 .main-index h2 {
   text-align: center;
@@ -121,29 +156,38 @@ footer .container .row .redes a {
   font-size: 50px;
   font-family: "Love Ya Like A Sister";
   padding-top: 50px;
-  padding-bottom: 80px;
+  padding-bottom: 5px;
+  text-shadow: 1px 1px 5px #fff;
+  letter-spacing: 2px;
 }
-.main-index .contenedor-mi {
-  padding-left: 90px;
-  padding-right: 90px;
+.main-index .subt {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 25px;
+  font-family: "Love Ya Like A Sister";
+  padding-bottom: 40px;
+  letter-spacing: 2px;
 }
-.main-index .contenedor-mi .card-deck {
-  padding-bottom: 100px;
+.main-index .tarjetas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.main-index .contenedor-mi .card-deck .card {
+.main-index .tarjetas .tarjeta {
   position: relative;
-  height: 300px;
-  border: none;
-  border-radius: 10px;
-  background-color: transparent;
+  min-width: 300px;
+  height: 350px;
+  margin: 0 40px 40px 40px;
 }
-.main-index .contenedor-mi .card-deck .card:hover .frente {
+.main-index .tarjetas .tarjeta:hover .frente {
   transform: perspective(600px) rotateY(180deg);
 }
-.main-index .contenedor-mi .card-deck .card:hover .dorso {
+.main-index .tarjetas .tarjeta:hover .dorso {
   transform: perspective(600px) rotateY(360deg);
 }
-.main-index .contenedor-mi .card-deck .card-body {
+.main-index .tarjetas .tarjeta .cara {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -152,44 +196,155 @@ footer .container .row .redes a {
   border-radius: 10px;
   overflow: hidden;
   transition: 0.5s;
-  padding: 0;
 }
-.main-index .contenedor-mi .card-deck .frente {
+.main-index .tarjetas .tarjeta .frente {
   transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
 }
-.main-index .contenedor-mi .card-deck .frente img {
+.main-index .tarjetas .tarjeta .frente img {
   position: absolute;
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main-index .contenedor-mi .card-deck .dorso {
+.main-index .tarjetas .tarjeta .dorso {
   transform: perspective(600px) rotateY(180deg);
-  background-color: rgb(21, 32, 86);
-  box-shadow: 0 5px 10px #000;
+  background-color: #152056;
   padding: 15px;
   color: whitesmoke;
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
-}
-.main-index .contenedor-mi .card-deck .dorso h3 {
-  font-size: 2em;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
   text-transform: capitalize;
-}
-.main-index .contenedor-mi .card-deck .dorso p {
-  letter-spacing: 0.5px;
+  font-family: "Love Ya Like A Sister";
+  letter-spacing: 1px;
+  text-shadow: 5px 5px 10px #000;
 }
 
 /*   MAIN CONTACTO   */
 .main-contacto {
   width: 100%;
+  height: auto;
 }
 .main-contacto .contenedor-mapa {
   padding: 0;
+}
+.main-contacto .contenedor-form {
+  background-color: #111111;
+  padding-bottom: 50px;
+}
+.main-contacto .contenedor-form h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Love Ya Like A Sister";
+  color: whitesmoke;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.main-contacto .contenedor-form .fila .columna1 {
+  display: flex;
+  align-items: center;
+}
+.main-contacto .contenedor-form .fila .columna1 p {
+  color: whitesmoke;
+  text-transform: capitalize;
+  font-size: 30px;
+  text-align: justify;
+  font-family: "Love Ya Like A Sister";
+}
+.main-contacto .contenedor-form .fila .columna2 form .cont {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.main-contacto .contenedor-form .fila .columna2 form .cont .fa-solid {
+  color: #1EB690;
+  background-color: #152056;
+  min-width: 50px;
+  padding-top: 15px;
+  text-align: center;
+}
+.main-contacto .contenedor-form .fila .columna2 form .cont input, .main-contacto .contenedor-form .fila .columna2 form .cont textarea {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-left: 2px solid #111;
+  background-color: #152056;
+  color: whitesmoke;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-family: "Love Ya Like A Sister";
+}
+.main-contacto .contenedor-form .fila .columna2 form .cont input::-moz-placeholder, .main-contacto .contenedor-form .fila .columna2 form .cont textarea::-moz-placeholder {
+  color: rgba(245, 245, 245, 0.5);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.main-contacto .contenedor-form .fila .columna2 form .cont input:-ms-input-placeholder, .main-contacto .contenedor-form .fila .columna2 form .cont textarea:-ms-input-placeholder {
+  color: rgba(245, 245, 245, 0.5);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.main-contacto .contenedor-form .fila .columna2 form .cont input::placeholder, .main-contacto .contenedor-form .fila .columna2 form .cont textarea::placeholder {
+  color: rgba(245, 245, 245, 0.5);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.main-contacto .contenedor-form .fila .columna2 form .botonc {
+  width: 100%;
+  border-color: #1EB690;
+  background-color: #1EB690;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-family: Verdana;
+  letter-spacing: 2px;
+}
+.main-contacto .contenedor-form .fila .columna2 form .botonc:hover {
+  opacity: 1;
+  box-shadow: 0 0 3px #1EB690;
+}
+
+/*   MAIN INFO   */
+.main-info {
+  width: 100%;
+  background-color: #111;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.main-info .contenedor-info .fila-info .texto-info {
+  text-align: justify;
+  color: whitesmoke;
+  font-family: "Love Ya Like A Sister";
+  letter-spacing: 2px;
+  font-size: 30px;
+  align-self: center;
+  text-transform: capitalize;
+}
+.main-info .contenedor-info .fila-info .texto-info2 {
+  padding-bottom: 50px;
+}
+.main-info .contenedor-info .fila-info .img-info {
+  padding-bottom: 30px;
+}
+.main-info .contenedor-info .fila-info .img-info img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  box-shadow: 5px 5px 5px #000;
+  border-radius: 10px;
+}
+.main-info .contenedor-info .fila-info .img-info1 {
+  padding-bottom: 80px;
+}
+.main-info .contenedor-info .fila-info .img-info2 {
+  padding-bottom: 80px;
+}
+.main-info .contenedor-info .fila-info .img-info3 {
+  padding-bottom: 80px;
 }/*# sourceMappingURL=estilos.css.map */
